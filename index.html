@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header / navbar -->
+    <header> 
+        <div class="container flexBetween">
+            <h1>Gaming <span id="dojo">Dojo</span></h1> 
+            <div class="navRight flexBetween">
+                <!-- currency change -->
+                <select onchange="changeCurrency(this)" name="currency change" id="changeCurrency">
+                    <option value="euro">Euro €</option>
+                    <option value="usd">USD $</option>
+                </select>
+                <div class="cart flexCenter">
+                    <img id="shoppingCartImg" src="./images/shoppingcart.png" alt="shopping cart">
+                    <a href="#" id="cartCount">0</a>
+                </div>
+                <div class="search">
+                    <img id="searchImg" src="./images/search-icon-png" alt="search">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- highlights -->
+    <div class="container">
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <div class="highlightsWindow flexBetween">
+                <div id="leftArrow">
+                    <img onclick="prevImg()" id="leftArrowImg" src="./images/black-arrow-left.png" alt="left arrow">
+                </div>
+                <div id="highlight">
+                    <img id="highlightImg" src="./images/lone-cabin.webp" alt="stock highlight">
+                </div>
+                <div id="rightArrow">
+                    <img onclick="nextImg()" id="rightArrowImg" src="./images/black-arrow-left.png" alt="arrow right">
+                </div>
+            </div>
+            <div class="windowDock flexCenter">
+                <div id="block0" class="dockBlock"></div>
+                <div id="block1" class="dockBlock"></div>
+                <div id="block2" class="dockBlock"></div>
+                <div id="block3" class="dockBlock"></div>
+            </div>
+        </div>
+        <!-- features -->
+        <div class="features flexCenter">
+            <div class="feature">
+                <img src="./images/placeholder_ad.jpg" alt="stock feature">
+                <div class="featureContent">
+                    <h3>Cafe Neko: Gold Edition</h3>
+                    <img src="#" alt="windows">
+                    <img src="#" alt="apple">
+                    <div class="featurePrice flexBetween">
+                        <div class="discount">
+                            <p>-20%</p>
+                        </div>
+                        <div class="price flexColumnEnd">
+                            <p class="oldPrice">€ <span class="price">14.98</span></p>
+                            <p class="currentPrice">€ <span class="price">10.49</span></p>
+                        </div>
+                        <div onclick="addCart()" class="buy">
+                            <p>Buy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="./images/placeholder_ad.jpg" alt="stock feature">
+                <div class="featureContent">
+                    <h3>Pixel Ninjas 2</h3>
+                    <img src="#" alt="windows">
+                    <img src="#" alt="apple">
+                    <div class="featurePrice flexBetween">
+                        <div class="discount">
+                            <p>-10%</p>
+                        </div>
+                        <div class="price flexColumnEnd">
+                            <p class="oldPrice">€ <span class="price">8.19</span></p>
+                            <p class="currentPrice">€ <span class="price">7.39</span></p>
+                        </div>
+                        <div onclick="addCart()" class="buy">
+                            <p>Buy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="./images/placeholder_ad.jpg" alt="stock feature">
+                <div class="featureContent">
+                    <h3>Stonepunk 10000 BCE</h3>
+                    <img src="#" alt="windows">
+                    <img src="#" alt="apple">
+                    <img src="#" alt="linux">
+                    <div class="featurePrice flexBetween">
+                        <div class="discount">
+                            <p>-20%</p>
+                        </div>
+                        <div class="price flexColumnEnd">
+                            <p class="oldPrice">€ <span class="price">14.99</span></p>
+                            <p class="currentPrice">€ <span class="price">19.99</span></p>
+                        </div>
+                        <div onclick="addCart()" class="buy">
+                            <p>Buy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

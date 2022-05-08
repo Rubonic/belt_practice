@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #eeee;
+}
+
+/* Utility classes start */
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexColumnEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+/* Utility classes end */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header/NavBar begin */
+header {
+    background-color: black;
+    margin-bottom: 10px;
+}
+header h1 {
+    color: white;
+}
+#dojo {
+    color:blueviolet
+}
+.navRight {
+    
+    min-height: 40px;
+    min-width: 250px;
+
+}
+#changeCurrency {
+    height: 30px;
+}
+#shoppingCartImg {
+    width: 30px;
+    filter: invert(1);
+
+}
+.cart {
+    
+    gap: 10px;
+}
+#cartCount {
+    color: white;
+}
+.search {
+    height: 30px;
+    min-width: 50px;
+}
+#searchImg {
+    width: 30px;
+    filter: invert(1);
+}
+
+
+/* Header/NavBar end */
+
+
+
+/* Highlights Begin */
+.highlights {
+}
+.highlights h3 {
+}
+.highlightsWindow {
+    min-height: 200px;
+}
+#leftArrow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#leftArrowImg {
+    width: 30px;
+    background-color: white;
+}
+#highlight {
+    min-height: 200px;
+    flex: 6;
+}
+#highlight img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+#rightArrow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#rightArrowImg {
+    width: 30px;
+    background-color: white;
+    transform: scaleX(-1);
+}
+.windowDock {
+    gap: 30px;
+    margin: 20px
+}
+.dockBlock {
+    background-color: rgb(175, 169, 169);
+    height: 10px;
+    width: 60px;
+    border-radius: 4px;
+}
+#block1 {
+    background-color: plum;
+}
+/* Highlights end */
+
+
+
+/* Features begin */
+.features {
+    gap: 40px;
+}
+.feature {
+    background-color: white;
+    min-height: 300px;
+    flex: 1;
+    border-radius: 10px;
+    
+}
+.featureContent {
+    padding-inline: 10px;
+}
+.feature img {
+    width: 306px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+.featurePrice {
+    min-height: 75px;
+}
+.featurePrice div {
+    /* align-items: flex-end; */
+}
+.oldPrice {
+    font-size: medium;
+    text-decoration: line-through;
+    color:rgb(54, 54, 54)
+}
+.currentPrice {
+    font-size: larger;
+}
+.discount p {
+    background-color: blueviolet;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.buy p {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;    
+    cursor: pointer;
+
+}
+
+
+/* Features end */
